@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1733609495 source:c:\users\msi\desktop\parking\parking\headers.c
+1733688901 source:c:\users\msi\desktop\parking\parking\headers.c
 	"Headers.h"
 	<stdlib.h>
 	<stdio.h>
+	<stdbool.h>
 
 1733602069 c:\users\msi\desktop\parking\parking\headers.h
 	<stdio.h>
 	<stdbool.h>
 
-1733609410 source:c:\users\msi\desktop\parking\parking\main.c
+1733688679 source:c:\users\msi\desktop\parking\parking\main.c
 	"Headers.h"
 	<stdio.h>
 	<stdlib.h>
