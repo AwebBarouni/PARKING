@@ -1,4 +1,4 @@
-#ifndef HEADERS_H_INCLUDED
+#define HEADERS_H_INCLUDED
 #define HEADERS_H_INCLUDED
 #include<stdio.h>
 #include <stdbool.h>
@@ -27,7 +27,7 @@ typedef struct date DATE;
 struct driver {
     char nom[50];
     int id;
-    bool a; //abonné ou pas
+    bool a; //abonnï¿½ ou pas
     FACTURE fac;
     int nbr_dates;
     DATE* dates;
@@ -39,7 +39,7 @@ struct personnel {
     int id;
     int salaire ;
     int nbr_position;
-    POSITION* pos;//lieu de travail(bloc et étage)
+    POSITION* pos;//lieu de travail(bloc et ï¿½tage)
 };
 typedef struct personnel PERSONNEL;
 
