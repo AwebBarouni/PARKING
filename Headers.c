@@ -419,7 +419,7 @@ void rechercheDriverParMatricule(VOITURE* v, int nbv, int matriculerecherche) {
     }
 
     if (!trouve) {
-        printf("Aucune voiture avec la matricule %d n'a été trouvée.\n", matriculerecherche);
+        printf("Aucune voiture avec la matricule %d n'a ï¿½tï¿½ trouvï¿½e.\n", matriculerecherche);
     }
 }
 
@@ -435,7 +435,7 @@ void recherchePersoParCIN (PERSONNEL* perso, int nbperso, int CIN){
     }
 
     if (!trouve) {
-        printf("Aucun personnel avec la CIN %d n'a été trouvee.\n", CIN);
+        printf("Aucun personnel avec la CIN %d n'a ï¿½tï¿½ trouvee.\n", CIN);
     }
 }
 
@@ -490,7 +490,7 @@ RESULTAT saisirResultat(VOITURE* v, int nbv){
     }
 
     if (!trouve) {
-        printf("Aucune voiture avec la matricule %d n'a été trouvée.\n", res.mat.matricule);
+        printf("Aucune voiture avec la matricule %d n'a ï¿½tï¿½ trouvï¿½e.\n", res.mat.matricule);
         res.duree.h=0;
         res.duree.mins=0;
         res.duree.sec=0;
@@ -733,7 +733,7 @@ void afficherMenuVoitures(VOITURE** v, int* nbv,FACTURE tarifs) {
                 printf("Retour au menu principal...\n");
                 break;
             default:
-                printf("Choix invalide. Veuillez réessayer.\n");
+                printf("Choix invalide. Veuillez rï¿½essayer.\n");
         }
     } while (choix != 0);
 }
@@ -798,7 +798,7 @@ void afficherMenuFinances(DRIVER* drv, int nc,DEPENSES** d,int* nbrDepenses) {
                 printf("Retour au menu principal...\n");
                 break;
             default:
-                printf("Choix invalide. Veuillez réessayer.\n");
+                printf("Choix invalide. Veuillez rï¿½essayer.\n");
         }
 
     } while (choix != 0);
@@ -845,7 +845,7 @@ void afficherMenuPersonnels(PERSONNEL** perso, int* nbperso,DEPENSES* d,int nbr_
                 printf("Retour au menu principal...\n");
                 break;
             default:
-                printf("Choix invalide. Veuillez réessayer.\n");
+                printf("Choix invalide. Veuillez rï¿½essayer.\n");
         }
     } while (choix != 0);
 }
@@ -1102,7 +1102,7 @@ DRIVER lireUnDriverDuFichier(FILE* fp) {
     // Read each part of the DRIVER struct
     fread(&drv.nom, sizeof(char[50]), 1, fp);  // Read 50 characters for the name
     fread(&drv.id, sizeof(int), 1, fp);     // Read an integer for the id
-    fread(&drv.a, sizeof(bool), 1, fp);     // Read a boolean for "abonné"
+    fread(&drv.a, sizeof(bool), 1, fp);     // Read a boolean for "abonnï¿½"
     fread(&drv.fac, sizeof(FACTURE), 1, fp);  // Read the FACTURE structure
     fread(&drv.nbr_dates, sizeof(int), 1, fp); // Read the number of dates
 
@@ -1126,7 +1126,7 @@ DRIVER* lireUnDriverDuFichierr(FILE* fp) {
     // Read each part of the DRIVER struct
     fread(&drv->nom, sizeof(char[50]), 1, fp);  // Read 50 characters for the name
     fread(&drv->id, sizeof(int), 1, fp);     // Read an integer for the id
-    fread(&drv->a, sizeof(bool), 1, fp);     // Read a boolean for "abonné"
+    fread(&drv->a, sizeof(bool), 1, fp);     // Read a boolean for "abonnï¿½"
     fread(&drv->fac, sizeof(FACTURE), 1, fp);  // Read the FACTURE structure
     fread(&drv->nbr_dates, sizeof(int), 1, fp); // Read the number of dates
 
@@ -1183,7 +1183,7 @@ void ecrireUneVoitureDansFichier(FILE*fp, VOITURE v)
 void ecrireUnDriverDansFichier(FILE* fp, DRIVER drv) {
     fwrite(&drv.nom, sizeof(char[50]), 1, fp);  // Write the name (50 characters)
     fwrite(&drv.id, sizeof(int), 1, fp);     // Write the driver ID
-    fwrite(&drv.a, sizeof(bool), 1, fp);     // Write the "abonné" boolean flag
+    fwrite(&drv.a, sizeof(bool), 1, fp);     // Write the "abonnï¿½" boolean flag
     fwrite(&drv.fac, sizeof(FACTURE), 1, fp); // Write the FACTURE structure
     fwrite(&drv.nbr_dates, sizeof(int), 1, fp); // Write the number of dates
 
